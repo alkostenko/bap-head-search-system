@@ -1,0 +1,13 @@
+.login-form{
+    max-width: 38rem;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.links>a{
+    font-weight: 600;
+}

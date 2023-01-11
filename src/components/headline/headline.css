@@ -1,0 +1,7 @@
+.headline{
+    width:100%;
+    height: 0.5rem;
+    background-image: linear-gradient(to right, #FFEFF2, #DBE9F2);
+    border-radius: 50px;
+    margin-bottom:3.75rem;
+}

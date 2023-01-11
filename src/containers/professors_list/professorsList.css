@@ -1,0 +1,93 @@
+.row-border{
+    width:100%;
+    padding: 2px;
+    margin-bottom: 0.5rem;
+    background-image:linear-gradient(to right, #FFEFF2, #DBE9F2);
+}
+
+.row{
+    width:100%; 
+    padding-block: 1rem;
+    padding-inline: 1.75rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.professor-list>p{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.number{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.knowledge-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:23%;
+}
+
+img{
+    margin-right: 0.625rem;
+}
+
+.professor-name{
+    width:25%;
+}
+
+.progress-bar{
+    width: 4%;
+    height: 1.25rem;
+    border: 1px solid black;
+    border-radius: 100px;
+    position:relative;
+}
+
+.progress-bar-bottom{
+    width:100%;
+    height: 100%;
+    background-color: black;
+    padding: auto auto auto 0.5rem;
+    display: flex;
+    align-items: end;
+}
+
+.progress-bar-top{
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-image: linear-gradient(to right, #FFEFF2, #DBE9F2);
+    padding: auto auto auto 0.5rem;
+    display: flex;
+    align-items: end;
+}
+
+.waiting{
+    width:1.6%;
+    text-align: right;
+}
+
+button{
+    width:17%;
+    height: 2.625rem;
+    display:grid;
+    place-items: center;
+    background-image: linear-gradient(to right, #FFEFF2, #DBE9F2);
+    color:black;
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 800;
+    border-radius: 300px;
+}
+
+button.checked{
+    background-color: black;
+    color:white;
+}

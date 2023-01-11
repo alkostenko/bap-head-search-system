@@ -1,0 +1,12 @@
+.cta{
+    padding-inline:2rem;
+    padding-block:0.625rem;
+    background-image: linear-gradient(to right, #FFEFF2, #DBE9F2);
+    color:black;
+    border-radius: 200px;
+    font-weight: 800;
+}
+
+.cta-link{
+    text-decoration: none;
+}
