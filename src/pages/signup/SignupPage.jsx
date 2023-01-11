@@ -8,7 +8,7 @@ import Footer from '../../containers/footer/Footer';
 import Navbar from '../../components/navbar/Navbar';
 
 
-const SingupPage = () => {
+const SignupPage = () => {
   return (
     <section className='signup-page'>
       <Navbar />
@@ -26,4 +26,4 @@ const SingupPage = () => {
   )
 }
 
-export default SingupPage
+export default SignupPage

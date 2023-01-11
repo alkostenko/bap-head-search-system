@@ -7,7 +7,7 @@ import './professors.css';
  import Footer from '../../containers/footer/Footer';
  import Headline from '../../components';
 
-const Professors = () => {
+const ProfessorsPage = () => {
   return (
     <section>
       <Navbar />
@@ -33,4 +33,4 @@ const Professors = () => {
   )
 }
 
-export default Professors
+export default ProfessorsPage

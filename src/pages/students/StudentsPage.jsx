@@ -6,7 +6,7 @@ import { Navbar } from '../../components';
 import Footer from '../../containers/footer/Footer';
 import Headline from '../../components';
 
-const Students = () => {
+const StudentsPage = () => {
   return (
     <section>
         <Navbar />
@@ -30,4 +30,4 @@ const Students = () => {
   )
 }
 
-export default Students
+export default StudentsPage
