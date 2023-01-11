@@ -1,7 +1,7 @@
 import React from 'react';
 import './signupPage.css';
 
-import NavbarRegistration from '../../components/navbar_registration/NavbarRegistration';
+import NavbarRegistration from '../../components/navbar/NavbarRegistration';
 import { Headline } from '../../components';
 import { Singup } from '../../containers/singup/Singup';
 import Footer from '../../containers/footer/Footer';

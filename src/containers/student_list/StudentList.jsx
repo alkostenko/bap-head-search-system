@@ -1,5 +1,6 @@
 import React from 'react';
 import './studentList.css';
+import { useEffect, useState } from 'react';
 
 import '../../App';
 import API_URL from '../../API';

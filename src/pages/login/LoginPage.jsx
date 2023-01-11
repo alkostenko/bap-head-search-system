@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarRegistration from '../../components/navbar_registration/NavbarRegistration';
+import NavbarRegistration from '../../components/navbar/NavbarRegistration';
 import Footer from '../../containers/footer/Footer';
 import { Headline } from '../../components';
 import Login from '../../containers/login/Login';

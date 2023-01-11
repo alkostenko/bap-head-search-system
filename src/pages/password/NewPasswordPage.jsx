@@ -1,7 +1,7 @@
 import React from 'react';
 import NewPassword from '../../containers/password/NewPassword';
 import { Headline } from '../../components';
-import NavbarRegistration from '../../components/navbar_registration/NavbarRegistration';
+import NavbarRegistration from '../../components/navbar/NavbarRegistration';
 import Footer from '../../containers/footer/Footer';
 import './newPasswordPage.css'
 

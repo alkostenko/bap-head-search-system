@@ -4,7 +4,8 @@ import './students.css';
 import StudentList from '../../containers/student_list/StudentList';
 import { Navbar } from '../../components';
 import Footer from '../../containers/footer/Footer';
-import Headline from '../../components';
+import Headline from '../../components/headline/Headline';
+import ProfessorsList from '../../containers/professors_list/ProfessorsList';
 
 const StudentsPage = () => {
   return (

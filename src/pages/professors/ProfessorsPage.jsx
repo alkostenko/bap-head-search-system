@@ -1,11 +1,11 @@
 import React from 'react';
 import './professors.css';
 
- import ProfessorsList from '../../containers/professors_list/ProfessorsList';
- import ProfessorPopups from '../../containers/professor_popups/ProfessorPopups';
- import { Navbar } from '../../components';
- import Footer from '../../containers/footer/Footer';
- import Headline from '../../components';
+import ProfessorsList from '../../containers/professors_list/ProfessorsList';
+import ProfessorPopups from '../../containers/professor_popups/ProfessorPopups';
+import { Navbar } from '../../components';
+import Footer from '../../containers/footer/Footer';
+import Headline from '../../components/headline/Headline';
 
 const ProfessorsPage = () => {
   return (
