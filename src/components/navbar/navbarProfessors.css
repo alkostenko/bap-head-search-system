@@ -1,0 +1,61 @@
+.navbar{
+    background-color: black;
+    width:100%;
+    padding-inline: 6.25rem;
+    padding-block: 1.625rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-links-account{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    color:white;
+    margin-right: 3.75rem;
+}
+
+.navbar-link{
+    margin-right: 3.75rem;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+}
+
+.account-name-email{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.7rem;
+    align-items: end;
+}
+
+.account-img{
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 300px;
+    background-image: url('/src/assets/avatar.png');
+    background-position: center;
+    background-size: contain;
+}
+
+#account-name{
+    color:white;
+    font-weight: 400;
+}
+
+#account-email{
+    color: #CFCFCF;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+}
