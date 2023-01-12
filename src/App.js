@@ -10,6 +10,8 @@ import Generate from './pages/generate/Generate';
 import Layout from './pages/layout/Layout';
 import AdminPanel from './pages/admin_panel/AdminPanel';
 import RequireAuth from './components/require_auth/RequireAuth';
+import StaffAuth from './components/require_auth/StaffAuth';
+import StudentTeacherAuth from './components/require_auth/StudentTeacherAuth';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -22,15 +24,20 @@ const App = () => {
         <Route path='newpassword' element={<NewPasswordPage/>}/>
 
         {/* protected routes */}
-        <Route element={<RequireAuth />}>
-          {/* student routes */}        
+        
+        {/* student routes */} 
+        <Route element={<StudentTeacherAuth allowedRoles={['student']}/>}>     
           <Route path='/' element={<Generate/>}/>
           <Route path='professors' element={<ProfessorsPage/>}/>
+        </Route>  
 
-          {/* teacher routes */}
+        {/* teacher routes */}
+        <Route element={<StudentTeacherAuth allowedRoles={['teacher']}/>}>
           <Route path='mystudents' element={<StudentsPage/>}/>
+        </Route>
 
-          {/* admin routes */}
+        {/* admin routes */}
+        <Route element={<StaffAuth />}>
           <Route path='panel' element={<AdminPanel/>}/>
         </Route>
       </Route>
