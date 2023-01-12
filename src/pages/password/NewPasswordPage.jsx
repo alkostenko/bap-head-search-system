@@ -2,7 +2,7 @@ import React from 'react';
 import NewPassword from '../../containers/password/NewPassword';
 import { Headline } from '../../components';
 import NavbarRegistration from '../../components/navbar/NavbarRegistration';
-import Footer from '../../containers/footer/Footer';
+import FooterRegistration from '../../containers/footer/FooterRegistration';
 import './newPasswordPage.css'
 
 const NewPasswordPage = () => {
@@ -18,7 +18,7 @@ const NewPasswordPage = () => {
           <NewPassword />
         </div>
       </section>
-      <Footer />
+      <FooterRegistration />
     </section>
   )
 }

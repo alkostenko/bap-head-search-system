@@ -4,7 +4,7 @@ import './signupPage.css';
 import NavbarRegistration from '../../components/navbar/NavbarRegistration';
 import { Headline } from '../../components';
 import { Singup } from '../../containers/singup/Singup';
-import Footer from '../../containers/footer/Footer';
+import FooterRegistration from '../../containers/footer/FooterRegistration';
 import Navbar from '../../components/navbar/Navbar';
 
 
@@ -21,7 +21,7 @@ const SignupPage = () => {
           <Singup />
         </div>
       </section>
-      <Footer />
+      <FooterRegistration />
     </section>
   )
 }

@@ -10,3 +10,8 @@
 .cta-link{
     text-decoration: none;
 }
+
+.button-active{
+    color: white;
+    background-color: black;
+}

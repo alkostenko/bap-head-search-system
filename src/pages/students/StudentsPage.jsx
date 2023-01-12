@@ -3,7 +3,7 @@ import './students.css';
 
 import StudentList from '../../containers/student_list/StudentList';
 import { Navbar } from '../../components';
-import Footer from '../../containers/footer/Footer';
+import FooterTeacher from '../../containers/footer/FooterTeacher';
 import Headline from '../../components/headline/Headline';
 import ProfessorsList from '../../containers/professors_list/ProfessorsList';
 
@@ -26,7 +26,7 @@ const StudentsPage = () => {
                 </div>
             </div>
         </section>
-        <Footer />
+        <FooterTeacher />
     </section>
   )
 }

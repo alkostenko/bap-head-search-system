@@ -36,3 +36,7 @@
     flex-direction: column;
     align-items:end;
 }
+
+.footerlink-active{
+    font-weight: 800;
+}

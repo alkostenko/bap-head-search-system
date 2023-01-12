@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 import { CTA } from '../../components';
 
@@ -14,7 +15,7 @@ const Footer = () => {
       </div>
       <div className='footer-divider'></div>
       <div className='footer-links'>
-        <p className="footer-link">Викладачі</p>
+        <Link to='/professors' activeClassName={"footerlink-active"}><p className="footer-link">Викладачі</p></Link>
         <CTA />
       </div>
     </div>

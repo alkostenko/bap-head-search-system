@@ -1,6 +1,6 @@
 import React from 'react';
 import NavbarRegistration from '../../components/navbar/NavbarRegistration';
-import Footer from '../../containers/footer/Footer';
+import FooterRegistration from '../../containers/footer/FooterRegistration';
 import { Headline } from '../../components';
 import Login from '../../containers/login/Login';
 import './loginpage.css';
@@ -18,7 +18,7 @@ const LoginPage = () => {
           <Login />
         </div>
       </section>
-      <Footer />
+      <FooterRegistration />
     </section>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './navbarProfessors.css';
-
+import { Link } from 'react-router-dom';
 
 const NavbarProfessors = () => {
   return (
@@ -10,9 +10,9 @@ const NavbarProfessors = () => {
         </svg>
         <div className='navbar-links-account'>
           <div className="navbar-links">
-            <p className="navbar-link">Мої студенти</p>
+            <Link to='/mystudents' activeClassName={"navlink-active"}><p className="navbar-link">Мої студенти</p></Link>
           </div>
-          <a href="#">
+          <Link to={"/account/teacher"}>
             <div className="account">
               <div className='account-name-email'>
                 <p id='account-name'>Костенко Олександр</p>
@@ -20,7 +20,7 @@ const NavbarProfessors = () => {
               </div>
               <div className="account-img"></div>
             </div>
-          </a>
+          </Link>
         </div>
     </section>
   )
