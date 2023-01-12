@@ -3,8 +3,12 @@ import './navbar.css';
 import { Link } from 'react-router-dom';
 
 import CTA from '../buttons/CTA';
+import useAuth from '../../hooks/useAuth';
+import StudentTeacherAuth from '../require_auth/StudentTeacherAuth';
 
 const Navbar = () => {
+  const {auth} = useAuth();
+
   return (
     <section className='navbar'>
         <svg className='img' width="67" height="24" viewBox="0 0 67 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,8 +22,8 @@ const Navbar = () => {
           <Link to={'/account/student'}>
             <div className="account">
               <div className='account-name-email'>
-                <p id='account-name'>Костенко Олександр</p>
-                <p id='account-email'>example@email.com</p>
+                <p id='account-name'>{auth.name}</p>
+                <p id='account-email'>{auth.email}</p>
               </div>
               <div className="account-img"></div>
             </div>

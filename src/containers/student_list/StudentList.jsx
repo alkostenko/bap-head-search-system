@@ -25,9 +25,9 @@ const StudentList = () => {
             <p class='student-name'>{student.name}</p>
             <div class='topic'>
               <img src="/src/assets/info_circle.png" alt="" class='info-icon'/>
-              <p className='student-topic'>{student.area}</p>
+              <p className='student-topic'>{student.thesis}</p>
             </div>
-            <button className='choose'>Обрати</button>
+            <button className='choose'>Затвердити</button>
           </div>
         </div>
       ))}

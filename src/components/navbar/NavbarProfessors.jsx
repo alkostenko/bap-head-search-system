@@ -1,8 +1,11 @@
 import React from 'react';
 import './navbarProfessors.css';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 const NavbarProfessors = () => {
+  const {auth} = useAuth();
+
   return (
     <section className='navbar'>
         <svg className='img' width="67" height="24" viewBox="0 0 67 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,12 +14,14 @@ const NavbarProfessors = () => {
         <div className='navbar-links-account'>
           <div className="navbar-links">
             <Link to='/mystudents' activeClassName={"navlink-active"}><p className="navbar-link">Мої студенти</p></Link>
+            <Link to='/waitinglist' activeClassName={"navlink-active"}><p className="navbar-link">Черга</p></Link>
+            <Link to='/adminpanel' activeClassName={"navlink-active"}><p className="navbar-link">Адмін панель</p></Link>
           </div>
           <Link to={"/account/teacher"}>
             <div className="account">
               <div className='account-name-email'>
-                <p id='account-name'>Костенко Олександр</p>
-                <p id='account-email'>example@email.com</p>
+                <p id='account-name'>{auth.name}</p>
+                <p id='account-email'>{auth.email}</p>
               </div>
               <div className="account-img"></div>
             </div>

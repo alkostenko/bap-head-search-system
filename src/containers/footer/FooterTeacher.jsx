@@ -16,6 +16,7 @@ const FooterTeacher = () => {
       <div className='footer-divider'></div>
       <div className='footer-links'>
         <Link to='/mystudents' activeClassName={"footerlink-active"}><p className="footer-link">Мої Студенти</p></Link>
+        <Link to='/waitinglist' activeClassName={"footerlink-active"}><p className="footer-link">Черга</p></Link>
       </div>
     </div>
   )
