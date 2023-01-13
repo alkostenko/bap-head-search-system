@@ -32,7 +32,7 @@ const TeachersProfile = () => {
         <div className="info-title">Вільних місць</div>
         <div className="account-info">{auth.max_students-auth.accepted_students}</div>
       </div>
-      <button className='button'>Вийти з аккаунту</button>
+      <button className='button-form'>Вийти з аккаунту</button>
     </div>
   )
 }

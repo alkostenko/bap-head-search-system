@@ -13,8 +13,8 @@ import AdminPanel from './pages/admin_panel/AdminPanel';
 import RequireAuth from './components/require_auth/RequireAuth';
 import StaffAuth from './components/require_auth/StaffAuth';
 import StudentTeacherAuth from './components/require_auth/StudentTeacherAuth';
-import StudentProfile from './containers/profiles/StudentProfile';
-import TeachersProfile from './containers/profiles/TeachersProfile';
+import StudentProfilePage from './pages/account/StudentProfilePage';
+import TeacherProfilePage from './pages/account/TeacherProfilePage';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -32,14 +32,14 @@ const App = () => {
         <Route element={<StudentTeacherAuth allowedRoles={['student']}/>}>     
           <Route path='/' element={<Generate/>}/>
           <Route path='professors' element={<ProfessorsPage/>}/>
-          <Route path='account/student' element={<StudentProfile/>}></Route>
+          <Route path='account/student' element={<StudentProfilePage/>}></Route>
         </Route>  
 
         {/* teacher routes */}
         <Route element={<StudentTeacherAuth allowedRoles={['teacher']}/>}>
           <Route path='mystudents' element={<StudentsPage/>}/>
           <Route path='waitinglist' element={<StudentsWaitingPage/>}/>
-          <Route path='account/teacher' element={<TeachersProfile/>}></Route>
+          <Route path='account/teacher' element={<TeacherProfilePage/>}></Route>
         </Route>
 
         {/* admin routes */}

@@ -23,18 +23,18 @@ const StudentProfile = () => {
         <div className="info-title">Група</div>
         <div className="account-info">{auth.group}</div>
       </div>
-      <div className="info-row">
-        <div>
+      <div className="info-row-change">
+        <div className="info-row">
           <div className="info-title">Тема</div>
           <div className="account-info">{auth.topic}</div>
         </div>
-        <button>Змінити тему</button>
+        <button className='change'>Змінити тему</button>
       </div>
       <div className="info-row">
         <div className="info-title">Викладач</div>
         <div className="account-info">{auth.teacher}</div>
       </div>
-      <button className='button'>Вийти з аккаунту</button>
+      <button className='button-form'>Вийти з аккаунту</button>
     </div>
   )
 }

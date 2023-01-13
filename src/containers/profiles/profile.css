@@ -1,0 +1,45 @@
+.profile-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.info-row{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color:#616161;
+    line-height: 2.875rem;
+    margin-bottom: 1.75rem;
+}
+
+.info-row-change{
+    width: 100%;
+    margin-bottom: 1.75rem;
+}
+
+.info-row-change>.info-row{
+    margin:0;
+}
+
+.info-title{
+    text-transform: uppercase;
+    font-weight: 1000;
+    color:black;
+}
+
+.change{
+    background-color: transparent;
+    border:none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #2B6A93;
+    text-decoration: underline;
+    padding:0;
+    margin: 0;
+}
+
+
