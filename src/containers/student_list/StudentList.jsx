@@ -23,6 +23,7 @@ const StudentList = () => {
         <div key={student.id} className='row-border'>
           <div className='row'>
             <p class='student-name'>{student.name}</p>
+            <p class='student-email'>{student.email}</p>
             <div class='topic'>
               <img src="/src/assets/info_circle.png" alt="" class='info-icon'/>
               <p className='student-topic'>{student.thesis}</p>

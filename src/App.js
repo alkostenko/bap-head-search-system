@@ -7,7 +7,7 @@ import NewPasswordPage from './pages/password/NewPasswordPage';
 import ProfessorsPage from './pages/professors/ProfessorsPage';
 import StudentsPage from './pages/students/StudentsPage';
 import StudentsWaitingPage from './pages/students/StudentsWaitingPage';
-import Generate from './pages/generate_page/GeneratePage';
+import GeneratePage from './pages/generate_page/GeneratePage';
 import Layout from './pages/layout/Layout';
 import AdminPanel from './pages/admin_panel/AdminPanel';
 import RequireAuth from './components/require_auth/RequireAuth';
@@ -30,7 +30,7 @@ const App = () => {
         
         {/* student routes */} 
         <Route element={<StudentTeacherAuth allowedRoles={['student']}/>}>     
-          <Route path='/' element={<Generate/>}/>
+          <Route path='/' element={<GeneratePage/>}/>
           <Route path='professors' element={<ProfessorsPage/>}/>
           <Route path='account/student' element={<StudentProfilePage/>}></Route>
         </Route>  

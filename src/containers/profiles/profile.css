@@ -1,6 +1,7 @@
 .profile-container{
     display:flex;
     flex-direction:column;
+    max-width: 38rem;
 }
 
 .info-row{
@@ -12,13 +13,17 @@
     font-size: 1.25rem;
     font-weight: 500;
     color:#616161;
-    line-height: 2.875rem;
+    line-height: 1.875rem;
     margin-bottom: 1.75rem;
+    padding-block: 0.5rem;
 }
 
 .info-row-change{
     width: 100%;
     margin-bottom: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .info-row-change>.info-row{
@@ -41,5 +46,12 @@
     padding:0;
     margin: 0;
 }
+
+.account-info{
+    max-width: 80%;
+    text-align: right;
+}
+
+
 
 

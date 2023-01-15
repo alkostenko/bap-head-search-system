@@ -2,7 +2,7 @@ import React from 'react';
 import './profilePage.css';
 import { Navbar } from '../../components';
 import Footer from '../../containers/footer/Footer';
-import Headline from '../../components';
+import Headline from '../../components/headline/Headline';
 import StudentProfile from '../../containers/profiles/StudentProfile';
 
 const StudentProfilePage = () => {

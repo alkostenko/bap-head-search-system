@@ -1,0 +1,48 @@
+.row-border{
+    width:100%;
+    padding: 2px;
+    margin-bottom: 0.5rem;
+    background-image:linear-gradient(to right, #FFEFF2, #DBE9F2);
+}
+
+.row{
+    width:100%; 
+    padding-block: 1rem;
+    padding-inline: 1.75rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.students-list{
+    width:100%;
+}
+
+.students-list>p{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.number{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+
+img{
+    margin-right: 0.625rem;
+}
+
+.student-topic{
+    width:40%;
+}
+
+.student-name{
+    width:30%;
+}
+
+.student-email{
+    width:20%;
+}

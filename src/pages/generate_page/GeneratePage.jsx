@@ -3,11 +3,11 @@ import './generatePage.css';
 
 import { Navbar } from '../../components';
 import Footer from '../../containers/footer/Footer';
-import Headline from '../../components';
+import Headline from '../../components/headline/Headline';
 import Generate from '../../containers/generate/Generate';
 
 
-const Generate = () => {
+const GeneratePage = () => {
   return (
     <section className='generate-page'>
       <Navbar />
@@ -25,4 +25,4 @@ const Generate = () => {
   )
 }
 
-export default Generate
+export default GeneratePage

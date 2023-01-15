@@ -9,23 +9,26 @@ import Headline from '../../components/headline/Headline';
 
 const ProfessorsPage = () => {
   return (
-    <section>
+    <section className='professors-page'>
       <Navbar />
-      <section>
+      <section className='professors-section'>
           <div className="head">
             <h1>Викладачі</h1>
             <Headline />
           </div>
-          <div className="table">
-              <div className="headline">
-                  <h4 className="column-name">ПІБ викладача</h4>
-                  <h4 className="column-name">Напрямки</h4>
-                  <h4 className="column-name">Затверджено</h4>
-                  <h4 className="column-name">Очікують</h4>
-              </div>
-              <div className="table-rows">
-                  <ProfessorsList />
-              </div>
+          <div className="table-container">
+            <div className="table">
+                <div className="header row">
+                    <h4 className="column-name name">ПІБ викладача</h4>
+                    <h4 className="column-name area">Напрямки</h4>
+                    <h4 className="column-name progress">Затверджено</h4>
+                    <h4 className="column-name wait">Очікують</h4>
+                    <div className='button-column'></div>
+                </div>
+                <div className="table-rows">
+                    <ProfessorsList />
+                </div>
+            </div>
           </div>
       </section>
       <Footer />

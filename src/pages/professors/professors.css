@@ -1,0 +1,67 @@
+.head{
+    width: 30.5rem;
+}
+
+.professors-section{
+    width:100%;
+    height: 100%;
+    padding-inline: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.professors-page{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.header{
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table{
+    width: 80%;
+}
+
+.table-rows{
+    width: 100%;
+    padding-inline: auto auto;
+}
+
+.name{
+    width: 25%;
+}
+
+.area{
+    width:23%;
+}
+
+.progress{
+    width:14%;
+}
+
+.wait{
+    width:1.6%;
+}
+
+.button-column{
+    width:17%;
+}

@@ -15,11 +15,14 @@ const DragAndDrop = ({onDrop, accept}) => {
         <div className="dropzone-text">
             {isDragActive?(
                 <div className="dropzone-content">
-                    <img src="../../assets/file_png.png" alt="" />
+                    <div className='img' />
                     <p className="dropzone-content">Drop it like it is hot!</p>
                 </div>
             ):(
-                <p className="dropzone-content">Перетягніть файли сюди або натисніть, що вибрати файли</p>
+                <div className="dropzone-content">
+                    <div className='img' />
+                    <p className="dropzone-content">Перетягніть файли або натисніть, щоб вибрати файли</p>
+                </div>
             )}
         </div>
     </div>

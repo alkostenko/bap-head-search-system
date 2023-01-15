@@ -2,7 +2,7 @@ import React from 'react';
 import './profilePage.css';
 import NavbarProfessors from '../../components/navbar/NavbarProfessors';
 import FooterTeacher from '../../containers/footer/FooterTeacher';
-import Headline from '../../components';
+import Headline from '../../components/headline/Headline';
 import TeachersProfile from '../../containers/profiles/TeachersProfile';
 
 const TeacherProfilePage = () => {

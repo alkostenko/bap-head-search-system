@@ -9,7 +9,7 @@ const StudentProfile = () => {
     <div className="profile-container">
       <div className="info-row">
         <div className="info-title">ПІБ</div>
-        <div className="account-info">{auth.name}</div>
+        <div className="account-info">Костенко Олександр Андрійович</div>
       </div>
       <div className="info-row">
         <div className="info-title">ПОШТА</div>
@@ -26,7 +26,7 @@ const StudentProfile = () => {
       <div className="info-row-change">
         <div className="info-row">
           <div className="info-title">Тема</div>
-          <div className="account-info">{auth.topic}</div>
+          <div className="account-info">Визначення ефективності UX дизайну за допомогою методів глибинного навчвння</div>
         </div>
         <button className='change'>Змінити тему</button>
       </div>

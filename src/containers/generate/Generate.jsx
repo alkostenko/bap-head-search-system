@@ -2,7 +2,7 @@ import React from 'react';
 import './generate.css';
 import { Link, useNavigation, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-import ReactDropdown from 'react-dropdown';
+import Dropdown from 'react-dropdown';
 import DragAndDrop from '../../components/drag_and_drop/DragAndDrop';
 
 
@@ -11,7 +11,16 @@ const Generate = () => {
 
     const defaultOption=auth.teacher;
     const options=[
-        {/* get teachers from DB */}
+        {/* get teachers from DB */},
+        { 
+            value: 1,
+            label: "Leanne Graham"
+          },
+          {
+            value:  2,
+            label: "Ervin Howell"
+          }
+
     ];
 
     const handleSubmit = async (e) =>{
@@ -38,15 +47,16 @@ const Generate = () => {
                 autoComplete='on'
                 value={auth.thesis}
                 placeholder='Тема моєї випускної роботи...'
+                size={36}
                 required 
             />
             <label htmlFor='teacher'>Викладач</label>
-            <ReactDropdown
+            <Dropdown
                 id='reacher'
                 options={options}
-                onChange={this._onSelect}
-                value={defaultOption}
-                placeholder="Select an option"
+                onChange={(values)=> this.setValues(values)}
+                // value={defaultOption}
+                placeholder="Оберіть свого викладача"
                 className='dropdown'
                 required
             />
